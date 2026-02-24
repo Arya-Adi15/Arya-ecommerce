@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Electronics Sale</title>
+    <link rel="stylesheet" href="beauty.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="electro-hero">
+        <h1>⚡ Electronics Mega Sale</h1>
+        <p>Upgrade Your Tech</p>
+    </div>
+
+    <!-- TIMER -->
+    <div class="timer-box">
+        Sale Ends In <span id="timer"></span>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="cats">
+        <button onclick="filter('electronics')" class="active">All</button>
+        <button onclick="filter('headphone')">Headphones</button>
+        <button onclick="filter('tv')">TVs</button>
+        <button onclick="filter('washing')">Washing Machines</button>
+        <button onclick="filter('tablet')">Tablets</button>
+        <button onclick="filter('laptop')">Laptop</button>
+    </div>
+
+    <h3 class="hot">🔥 Hot Tech Deals</h3>
+
+    <!-- PRODUCTS -->
+    <div id="products"></div>
+
+    <!-- PROMO BANNERS -->
+    <div class="beauty-banners">
+        <img src="">
+        <img src="">
+    </div>
+
+    <h2 class="budget-title">Tech on a Budget</h2>
+
+    <div class="budget-grid">
+
+        <div class="budget-card">Under<br><span>₹999</span></div>
+        <div class="budget-card">Under<br><span>₹1,999</span></div>
+        <div class="budget-card">Under<br><span>₹4,999</span></div>
+
+        <div class="budget-card">Min.<br><span>30%</span><small>Off</small></div>
+        <div class="budget-card">Min.<br><span>50%</span><small>Off</small></div>
+        <div class="budget-card">Min.<br><span>70%</span><small>Off</small></div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

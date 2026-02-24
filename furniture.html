@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Furniture Sale</title>
+    <link rel="stylesheet" href="furniture.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="furniture-hero">
+        <h1>🛋 Furniture Mega Sale</h1>
+        <p>Make Your Home Beautiful</p>
+    </div>
+
+    <!-- TIMER -->
+    <div class="timer-box">
+        Sale Ends In <span id="timer"></span>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="cats">
+        <button onclick="filter('furniture')" class="active">All</button>
+        <button onclick="filter('bed')">Beds</button>
+        <button onclick="filter('chair')">Office Chairs</button>
+        <button onclick="filter('table')">Coffee Tables</button>
+        <button onclick="filter('sofa')">Sofa</button>
+        <button onclick="filter('laptoptable')">Laptop Tables</button>
+    </div>
+
+    <h3 class="hot">🔥 Hot Furniture Deals</h3>
+
+    <!-- PRODUCTS -->
+    <div id="products"></div>
+
+    <!-- PROMO BANNERS -->
+    <div class="beauty-banners">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/500/image/1a38b1cba9f8db1c.jpg?q=60">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/500/image/5c7d9d08c3d9465a.jpg?q=60">
+    </div>
+
+    <h2 class="budget-title">Furniture on a Budget</h2>
+
+    <div class="budget-grid">
+
+        <div class="budget-card">Under<br><span>₹2,999</span></div>
+        <div class="budget-card">Under<br><span>₹4,999</span></div>
+        <div class="budget-card">Under<br><span>₹9,999</span></div>
+
+        <div class="budget-card">Min.<br><span>30%</span><small>Off</small></div>
+        <div class="budget-card">Min.<br><span>50%</span><small>Off</small></div>
+        <div class="budget-card">Min.<br><span>70%</span><small>Off</small></div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

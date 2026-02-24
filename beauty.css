@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fff3f8;
+}
+
+/* HERO */
+
+.beauty-hero {
+    background: linear-gradient(135deg, #ff6a88, #ff99ac);
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+/* TIMER */
+
+.timer-box {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* CATEGORY CHIPS */
+
+.cats {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cats button {
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cats button:hover,
+.cats button.active {
+    background: #ff4f8b;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* HOT */
+
+.hot {
+    margin-left: 20px;
+}
+
+/* PRODUCTS */
+
+#products {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    position: relative;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 8px 0;
+}
+
+.card p {
+    color: #ff4f8b;
+    font-weight: bold;
+}
+
+.card::before {
+    content: "HOT";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: red;
+    color: white;
+    font-size: 11px;
+    padding: 3px 7px;
+    border-radius: 8px;
+}
+
+/* PROMO BANNERS */
+
+.beauty-banners {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+}
+
+.beauty-banners img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .card img {
+        height: 150px;
+    }
+}
+
+.budget-title {
+    margin: 20px;
+    font-size: 24px;
+}
+
+/* GRID */
+
+.budget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+
+.budget-card {
+    height: 160px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #ffe29f, #ffc94d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #7b1c1c;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .2);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* PRICE */
+
+.budget-card span {
+    font-size: 40px;
+}
+
+/* OFF */
+
+.budget-card small {
+    font-size: 18px;
+    display: block;
+}
+
+/* HOVER */
+
+.budget-card:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+    .budget-card {
+        height: 130px;
+        font-size: 18px;
+    }
+
+    .budget-card span {
+        font-size: 32px;
+    }
+}
+
+/* ELECTRONICS HERO */
+
+.electro-hero {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: hero 8s infinite;
+    color: white;
+    text-align: center;
+    padding: 45px;
+}
+
+/* Tech glow on cards */
+
+.card:hover {
+    box-shadow: 0 0 20px #00c6ff;
+}
+
+/* Budget cards tech style */
+
+.budget-card {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    color: #003366;
+}
+
+/* Hot title tech */
+
+.hot {
+    color: #00c6ff;
+}
